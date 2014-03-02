@@ -26,7 +26,7 @@ class UserController
 		//generate hash
 		$sHash = password_hash( $sPass.$sSalt1, $hashalgo, array('salt'=> $sSalt2));
 
-		$bValid = password_verify( $sHash, $oUser->getPassHash) 
+		$bValid = password_verify( $sHash, $oUser->getPassHash); 
         }
 
 }
